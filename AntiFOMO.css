@@ -27,18 +27,13 @@ div:has(> div[aria-label="Send a gift"]) {
     display: none !important;
 }
 
-/* Hide Sticker and GIF picker buttons */
-/*
+/* Hide Sticker and GIF picker buttons *//*
 div[role="button"][aria-label="Open sticker picker"],
 div[role="button"][aria-label="Open GIF picker"] {
     display: none !important;
-}
-*/
+}*/
 
-/* ============================= */
 /* Message hover toolbar cleanup */
-/* ============================= */
-
 /* Hide Quick Reaction Emoji, Add Reaction, and separator */
 span:has(div[aria-label^="Click to react with"]),
 span:has(div[aria-label="Add Reaction"]),
@@ -46,10 +41,7 @@ div.separator_f84418 {
     display: none !important;
 }
 
-/* ============================= */
 /* Hover > ... More menu cleanup */
-/* ============================= */
-
 /* Hide Quick Reaction Group, Add Reaction submenu, and leftover separators */
 div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"]),
 div[role="menuitem"][id="message-actions-add-reaction"],
