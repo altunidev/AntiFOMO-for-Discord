@@ -8,42 +8,24 @@
 */
 
 /* Hide Nitro, Shop, and Quests */
-ul[aria-label="Direct Messages"] > *:where(
-    :has(a[href="/shop"]),
-    :has(a[href="/store"]),
-    :has(a[href*="/quest"])
-    /*:has(a[href="/quest-home"])*/ /* in case the catchall above doesn't work */
-) {
-    display: none !important;
-}
+ul[aria-label="Direct Messages"] > *:where(     /* you can still access these sections by pressing  */
+    :has(a[href="/shop"]),                      /* "Alt + Down Arrow" from the Friends tab, or      */
+    :has(a[href="/store"]),                     /* "Alt + Arrow Up" from the latest Direct Message  */
+    :has(a[href*="/quest"])                     /* in your DM's                                     */
 
-/* Hide Server Boost */
-li:has([aria-label*="Server Boost"]) {
-    display: none !important;
-}
-
-/* Hide the entire gift button container */
-div:has(> div[aria-label="Send a gift"]) {
-    display: none !important;
-}
-
-/* Hide Sticker and GIF picker buttons *//*
-div[role="button"][aria-label="Open sticker picker"],
-div[role="button"][aria-label="Open GIF picker"] {
-    display: none !important;
-}*/
+    /*:has(a[href="/quest-home"])*/                 /* in case the catchall stops working bc discord */
+),
+li:has([aria-label*="Server Boost"]),               /* Hide Server Boost */
+div:has(> div[aria-label="Send a gift"]),           /* Hide the entire gift button container */
 
 /* Message hover toolbar cleanup */
-/* Hide Quick Reaction Emoji, Add Reaction, and separator */
-span:has(div[aria-label^="Click to react with"]),
-span:has(div[aria-label="Add Reaction"]),
-div.separator_f84418 {
-    display: none !important;
-}
+span:has(div[aria-label^="Click to react with"]),   /* the three emotes on the hover-bar */
+span:has(div[aria-label="Add Reaction"]),           /* the stable emote button */
+div.separator_f84418,                               /* leftover separator bar */
 
-/* Hide Quick Reaction Group, Add Reaction submenu, and leftover separators */
-div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"]),
-div[role="menuitem"][id="message-actions-add-reaction"],
-div[role="menu"] div[role="separator"].separator_c1e9c4 {
-    display: none !important;
-}
+/* Hover > ... More menu cleanup */
+div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"]),   /* cluster of emotes at top of menu */
+div[role="menuitem"][id="message-actions-add-reaction"],                        /* hover-open sub-menu */
+div[role="menu"] div[role="separator"].separator_c1e9c4                         /* leftover separator */
+
+{ display: none !important; }       /* disable everything from above */
