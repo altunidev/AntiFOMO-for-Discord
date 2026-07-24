@@ -1,7 +1,7 @@
 /**
  * @name AntiFOMO
  * @description Reduce clutter and upselling by disabling elements.
- * @author saltydev
+ * @author Salty
  * @version 1.0.0
  * @website https://github.com/altunidev/AntiFOMO-for-Discord
  * @source https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css
@@ -11,8 +11,8 @@
 ul[aria-label="Direct Messages"] > *:where(
     :has(a[href="/shop"]),
     :has(a[href="/store"]),
-    :has(a[href="/quest-home"])
-    /*:has(a[href*="/quest"])*/
+    :has(a[href*="/quest"])
+    /*:has(a[href="/quest-home"])*/ /* in case the catchall above doesn't work */
 ) {
     display: none !important;
 }
@@ -41,7 +41,6 @@ div.separator_f84418 {
     display: none !important;
 }
 
-/* Hover > ... More menu cleanup */
 /* Hide Quick Reaction Group, Add Reaction submenu, and leftover separators */
 div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"]),
 div[role="menuitem"][id="message-actions-add-reaction"],
