@@ -18,4 +18,4 @@ The only file where LLM assistance was used is [`/AntiFOMO.css`](https://github.
 
 If you have issues with LLM assistance, please do the open source thing and audit the file yourself. Want something not LLM-assisted? Feel free to fork this repo and do whatever you'd like with it.
 
-Stopped reading after glazing over the word "ChatGPT" until the end? From one human to another, please re-read from line 11 to line 15 of this file.
+Stopped reading after glazing over the word "ChatGPT" until the end? From one human to another, please re-read from line 15 to line 21 of this file.
