@@ -13,3 +13,5 @@ The extent to which LLM assistance was used is simply as a means to parse HTML a
 The only file where LLM assistance was used is [`/AntiFOMO.css`](https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css), which currently consists of less than 50 sanely written, easily readable lines. I have personally audited and heavily tested this code. I intend to improve it by hand.
 
 If you have issues with LLM assistance, please do the open source thing and audit the file yourself. Want something not LLM-assisted? Feel free to fork this repo and do whatever you'd like with it.
+
+Stopped reading after glazing over the word "ChatGPT" until the end? From one human to another, please re-read from line 11 to line 15 of this file.
