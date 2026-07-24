@@ -2,8 +2,10 @@
 A lightweight Discord CSS modification built to reduce distractions and hide unnecessary UI elements. Best if used with BetterDiscord or Vencord Themes. Can even be used in conjunction with other custom CSS themes!
 
 ## How to tweak:
-
 Simply comment out (`/* [sample text */`) any line you wish to disable. I've been pretty heavy-handed in blocking elements that annoy me personally, so I understand if others may want to re-enable features that I've blocked out. I'll do my best to label everything as and where necessary.
+
+## Other notes:
+With the Nitro, Shop, and Quests sections being disabled from the home page, you can still navigate to these sections by pressing `Alt + Down Arrow` from the Friends section, or `Alt + Up Arrow` from the latest Direct Message recepient, as these pages still exist on the back-end. This CSS simply hides these as options to click on (and thus take up less screen space).
 
 ### Disclosure
 This was drafted partially with assistance from ChatGPT (logged out, guest user mode) on the bare minimum featureset.
