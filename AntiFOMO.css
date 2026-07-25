@@ -2,7 +2,7 @@
  * @name AntiFOMO
  * @description Reduce clutter and upselling by disabling elements.
  * @author Salty
- * @version 1.0.0
+ * @version 1.0.1
  * @website https://github.com/altunidev/AntiFOMO-for-Discord
  * @source https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css
 */
@@ -11,11 +11,14 @@ ul[aria-label="Direct Messages"] > *:where( :has(a[href="/shop"]), :has(a[href="
 li:has([aria-label*="Server Boost"]),               /* Hide Server Boost */
 div:has(> div[aria-label="Send a gift"]),           /* Hide the entire gift button container */
 /* Chatbox message hover toolbar cleanup */
-span:has(div[aria-label^="Click to react with"]),                               /* the three emotes on the message hover-bar */
+span:has(div[aria-label^="Click to react with"]),                               /* the quick-react three emotes on the message hover-bar */
 span:has(div[aria-label="Add Reaction"]),                                       /* the message hover-bar emote button */
 div.separator_f84418,                                                           /* leftover message hover-bar separator bar */
 div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"]),   /* cluster of emotes at top of Hover > More menu */
 div[role="menuitem"][id="message-actions-add-reaction"],                        /* Emote hover-open sub-menu within Hover > More */
-div[role="menu"] div[role="separator"].separator_c1e9c4                         /* leftover Hover > More sub-menu separator bar */
+div[role="menu"] div[role="separator"].separator_c1e9c4,                        /* leftover Hover > More sub-menu separator bar */
+div[role="group"]:has(> div[id^="message-quickreact-"]),                        /* message right-click quick-react */
+div[role="group"]:has(#message-add-reaction),                                   /* right-click hover-open sub-menu */
+div[role="separator"].separator_c1e9c4                                          /* leftover right-click separator bar */
 
 { display: none !important; }       /* disable everything from above */
