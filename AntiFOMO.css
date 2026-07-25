@@ -2,7 +2,7 @@
  * @name AntiFOMO Autoupdate
  * @description Reduce clutter and upselling by disabling elements.
  * @author Salty
- * @version 1.0.1
+ * @version 1.0.2
  * @website https://github.com/altunidev/AntiFOMO-for-Discord
  * @source https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css
  *
@@ -13,7 +13,8 @@
 
 ul[aria-label="Direct Messages"] > *:where( :has(a[href="/shop"]), :has(a[href="/store"]), :has(a[href*="/quest"]) )   	/* Hide Nitro, Shop, and Quests */
 , li:has([aria-label*="Server Boost"])						                              /* Hide Server Boost */
-, div:has(> div[aria-label="Send a gift"])					                            /* Hide the entire gift button container */
+, div:has(> div[aria-label="Send a gift"])					                            /* Hide the "Gift" chatbox button */
+, div:has(> div[aria-label="Apps"])							                                /* Hide the "Apps" chatbox button. You can still access your wordle from the "+" menu on the left, stop panicking! */
 
 /* Hide Nitro Upsell attempts (in hopes to remove FOMO dark patterns) */
 , span:has(div[aria-label^="Click to react with"])			                        /* the quick-react three emotes on the message hover-bar */
