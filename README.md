@@ -45,7 +45,7 @@ So I decided to stop paying.
 
 In doing so, I started messing with custom themes, and I got the itch to remove annoyances that've been bugging me for a while, and I started on a bit of custom CSS.
 
-I built this to be as minimal as possible, only removing annoyances and features that nobody seems to use regularly (but still populate screen space). This does not aim to re-proportion or shuffle around elements, but simply act as just... an ad blocker, really.
+I built this to be as minimal as possible, only removing annoyances and features that nobody seems to use regularly (but still populate screen space). This does not aim to re-proportion or shuffle around elements. I aim to maintain full compatibility with the most modern Discord client, such that it also maintains compatibility with customised CSS themes, should anyone wish to use these. In essence, this is simply meant to act as an ad-blocker and declutter-er.
 
 I built the "Autoupdate" feature (by importing the main CSS file) because I use, on any given day, between one and four different PC's, all with Discord logged in (not including mobile devices). Having to replace the CSS file on every PC any time I find a new HTML element to block will get annoying after... well... even just one change. So instead, I'd have the CSS pull the latest from this repo automatically.
 
