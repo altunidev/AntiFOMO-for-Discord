@@ -1,0 +1,14 @@
+/**
+ * @name AntiFOMO Autoupdate
+ * @description Reduce clutter and upselling by disabling elements.
+ * @author Salty
+ * @version 1.0.1
+ * @website https://github.com/altunidev/AntiFOMO-for-Discord
+ * @source https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css
+*/
+
+/* jsDelivr as a CDN, by suggestion of LLM. Looked into it a little, seems legit. */
+@import url("https://cdn.jsdelivr.net/gh/altunidev/AntiFOMO-for-Discord@main/AntiFOMO.css");
+
+/* fallback to raw github import in case jsDelivr fails */
+/* @import url('https://raw.githubusercontent.com/altunidev/AntiFOMO-for-Discord/refs/heads/main/AntiFOMO.css'); */
