@@ -11,7 +11,10 @@
  * Otherwise, use this file for local-hosted blocking, understanding no updates automatically apply.
 */
 
-ul[aria-label="Direct Messages"] > *:where( :has(a[href="/shop"]), :has(a[href="/store"]), :has(a[href*="/quest"]) )   	/* Hide Nitro, Shop, and Quests */
+ul[aria-label="Direct Messages"] > *:where(										/* Hide Nitro, Shop, and Quests */
+  :has(a[href="/shop"]),
+  :has(a[href="/store"]),
+  :has(a[href*="/quest"]) )
 , li:has([aria-label*="Server Boost"])											/* Hide Server Boost */
 , div:has(> div[aria-label="Send a gift"])										/* Hide the "Gift" chatbox button */
 , div:has(> div[aria-label="Apps"])												/* Hide the "Apps" chatbox button. You can still access your wordle from the "+" menu on the left, stop panicking! */
@@ -22,11 +25,11 @@ ul[aria-label="Direct Messages"] > *:where( :has(a[href="/shop"]), :has(a[href="
 , div.separator_f84418															/* leftover message hover-bar separator bar */
 
 , div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"])	/* cluster of emotes at top of Hover > More menu */
-, div[role="menuitem"][id="message-actions-add-reaction"]						/* Emote hover-open sub-menu within Hover > More */
+/*, div[role="menuitem"][id="message-actions-add-reaction"] */					/* Emote hover-open sub-menu within Hover > More */
 , div[role="menu"] div[role="separator"].separator_c1e9c4						/* leftover Hover > More sub-menu separator bar */
 
 , div[role="group"]:has(> div[id^="message-quickreact-"])						/* message right-click quick-react */
-, div[role="group"]:has(#message-add-reaction)									/* right-click hover-open sub-menu */
+/*, div[role="group"]:has(#message-add-reaction) */								/* right-click hover-open sub-menu */
 , div[role="separator"].separator_c1e9c4										/* leftover right-click separator bar */
 
 , #user-profile-editing-panel div[class*="scrollRegion"]						/* per-server profile nitro-only edits */
