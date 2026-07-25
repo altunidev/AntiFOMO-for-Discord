@@ -43,18 +43,18 @@ For myself. Really it's as simple as that. I made this because I got fed up with
 
 So I decided to stop paying.
 
-In doing so, I started messing with custom themes, and I got the itch to remove annoyances that've been bugging me for a while, and I started on a bit of custom CSS.
+In doing so, I started messing with custom themes, and I got the itch to remove annoyances that've been bugging me for a while, and I started on a bit of custom CSS in the "Edit QuickCSS" Vencord theme feature.
 
-I built this to be as minimal as possible, only removing annoyances and features that nobody seems to use regularly (but still populate screen space). This does not aim to re-proportion or shuffle around elements. I aim to maintain full compatibility with the most modern Discord client, such that it also maintains compatibility with customised CSS themes, should anyone wish to use these. In essence, this is simply meant to act as an ad-blocker and declutter-er.
+I built this to be as minimal as possible. This does not aim to re-proportion or shuffle around elements. I aim to maintain full compatibility with the modern Discord client, such that it also maintains compatibility with customised CSS themes, should anyone wish to use these.
 
-I built the "Autoupdate" feature (by importing the main CSS file) because I use, on any given day, between one and four different PC's, all with Discord logged in (not including mobile devices). Having to replace the CSS file on every PC any time I find a new HTML element to block will get annoying after... well... even just one change. So instead, I'd have the CSS pull the latest from this repo automatically.
+I built the "Autoupdate" feature because I use, on any given day, between one and four different PC's. Having to update the CSS file on every PC any time I find a new HTML element to block will get annoying after... well... even just _one_ change.
 
 # Does this go against Discord's ToS?
 Maybe. This does modify the client slightly.
 
 But the entire Vencord project also modifies the client too, and it's existed for this long without being nuked from orbit.
 
-As far as I've seen, the biggest thing against ToS is malicious use of clientside modifications. Which this only aims to improve the individual user experience, runs locally, without affecting remote clients or other users. In technicality, this is nothing more than a simple CSS modification.
+As far as I've seen, the biggest thing against ToS is _**the malicious use of**_ clientside modifications. This aims only to improve the individual user experience and runs without affecting other users. In technicality, this is nothing more than a simple CSS modification.
 
 # Disclosure
 This was drafted partially with assistance from ChatGPT (logged out, guest user mode) on the bare minimum featureset.
