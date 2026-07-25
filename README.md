@@ -61,7 +61,7 @@ This was drafted partially with assistance from ChatGPT (logged out, guest user 
 
 The extent to which LLM assistance was used is simply as a means to parse HTML and draft exact formatting inserted into the CSS file. I manually inspected web elements within the web console on Discord's webapp. I have personally tested the code extensively and audited every line of code, along with reformatting and architecting the structure of the file itself by hand.
 
-The only file where LLM assistance was used is [`/AntiFOMO.css`](https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css), which currently consists of less than 25 sanely written, easily readable lines of code (not including line comments, which I have written). There are more lines of documentation than code, in attempts to ensure this is as accessible to as wide of a population as possible. Additionally, I have personally audited, edited, and heavily tested this code.
+The only file where LLM assistance was used is [`/AntiFOMO.css`](https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css), which currently consists of less than 50 sanely written, easily readable lines of code (not including line comments, which I have written). There are more lines of documentation than code, in attempts to ensure this is as accessible to as wide of a population as possible. Additionally, I have personally audited, edited, and heavily tested this code.
 
 If you have issues with LLM assistance in code, please do the open source thing and audit the file yourself. Want something not LLM-assisted? Feel free to fork this repo and do whatever you'd like with it.
 
