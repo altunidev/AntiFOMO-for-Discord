@@ -16,12 +16,13 @@ ul[aria-label="Direct Messages"] > *:where(										/* Hide Nitro, Shop, and Qu
   :has(a[href="/store"]),
   :has(a[href*="/quest"]) )
 , li:has([aria-label*="Server Boost"])											/* Hide Server Boost */
-, div:has(> div[aria-label="Send a gift"])										/* Hide the "Gift" chatbox button */
-, div:has(> div[aria-label="Apps"])												/* Hide the "Apps" chatbox button. You can still access your wordle from the "+" menu on the left, stop panicking! */
+, div[aria-label="Send a gift"]                                                 /* Hide the "Gift" chatbox button */
+, div[aria-label="Apps"]												        /* Hide the "Apps" chatbox button. You can still access your wordle from the "+" menu on the left, stop panicking! */
 
 /* Hide Nitro Upsell attempts (in hopes to remove FOMO dark patterns) */
-, span:has(div[aria-label^="Click to react with"])								/* the quick-react three emotes on the message hover-bar */
-, span:has(div[aria-label="Add Reaction"])										/* the message hover-bar emote button */
+
+, div[aria-label^="Click to react with"]										/* the quick-react three emotes on the message hover-bar */
+, div[aria-label="Add Reaction"]												/* the message hover-bar emote button */
 , div.separator_f84418															/* leftover message hover-bar separator bar */
 
 , div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"])	/* cluster of emotes at top of Hover > More menu */
@@ -31,6 +32,9 @@ ul[aria-label="Direct Messages"] > *:where(										/* Hide Nitro, Shop, and Qu
 , div[role="group"]:has(> div[id^="message-quickreact-"])						/* message right-click quick-react */
 /*, div[role="group"]:has(#message-add-reaction) */								/* right-click hover-open sub-menu */
 /*, div[role="separator"].separator_c1e9c4	*/									/* leftover right-click separator bar */
+
+, [class*="upsellContainer"]													/* react / emote menu upsell banner on scroll */
+, [aria-label="Enable Super Reactions"]											/* disable super reactions button */
 
 , #user-profile-editing-panel div[class*="scrollRegion"]						/* per-server profile nitro-only edits */
 
