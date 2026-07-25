@@ -10,9 +10,10 @@
  * This local stylesheet exists only to import the latest version from GitHub.
 */
 
-
-/* jsDelivr as a CDN, by suggestion of LLM. Looked into it a little, seems legit. */
-@import url("https://cdn.jsdelivr.net/gh/altunidev/AntiFOMO-for-Discord@main/AntiFOMO.css");
-
 /* fallback to raw github import in case jsDelivr fails */
 @import url('https://raw.githubusercontent.com/altunidev/AntiFOMO-for-Discord/refs/heads/main/AntiFOMO.css');
+
+/* jsDelivr as a CDN, by suggestion of LLM. Looked into it a little, seems legit. */
+/* Though it's a little slow on caching, which makes rapid prototyping difficult. */
+/* Keeping as a commented-out repository just in case...                          */
+/* @import url("https://cdn.jsdelivr.net/gh/altunidev/AntiFOMO-for-Discord@main/AntiFOMO.css"); */
