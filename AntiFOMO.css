@@ -11,18 +11,35 @@
  * Otherwise, use this file for local-hosted blocking, understanding no updates automatically apply.
 */
 
-ul[aria-label="Direct Messages"] > *:where( :has(a[href="/shop"]), :has(a[href="/store"]), :has(a[href*="/quest"]) ),   /* Hide Nitro, Shop, and Quests */
-li:has([aria-label*="Server Boost"]),               /* Hide Server Boost */
-div:has(> div[aria-label="Send a gift"]),           /* Hide the entire gift button container */
-/* Chatbox message hover toolbar cleanup */
-span:has(div[aria-label^="Click to react with"]),                               /* the quick-react three emotes on the message hover-bar */
-span:has(div[aria-label="Add Reaction"]),                                       /* the message hover-bar emote button */
-div.separator_f84418,                                                           /* leftover message hover-bar separator bar */
-div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"]),   /* cluster of emotes at top of Hover > More menu */
-div[role="menuitem"][id="message-actions-add-reaction"],                        /* Emote hover-open sub-menu within Hover > More */
-div[role="menu"] div[role="separator"].separator_c1e9c4,                        /* leftover Hover > More sub-menu separator bar */
-div[role="group"]:has(> div[id^="message-quickreact-"]),                        /* message right-click quick-react */
-div[role="group"]:has(#message-add-reaction),                                   /* right-click hover-open sub-menu */
-div[role="separator"].separator_c1e9c4                                          /* leftover right-click separator bar */
+ul[aria-label="Direct Messages"] > *:where( :has(a[href="/shop"]), :has(a[href="/store"]), :has(a[href*="/quest"]) )   	/* Hide Nitro, Shop, and Quests */
+, li:has([aria-label*="Server Boost"])						                              /* Hide Server Boost */
+, div:has(> div[aria-label="Send a gift"])					                            /* Hide the entire gift button container */
 
-{ display: none !important; }       /* disable everything from above */
+/* Hide Nitro Upsell attempts (in hopes to remove FOMO dark patterns) */
+, span:has(div[aria-label^="Click to react with"])			                        /* the quick-react three emotes on the message hover-bar */
+, span:has(div[aria-label="Add Reaction"])					                            /* the message hover-bar emote button */
+, div.separator_f84418										                                      /* leftover message hover-bar separator bar */
+
+, div[role="group"].wrapper_f563df:has(div[id^="message-actions-quickreact-"])	/* cluster of emotes at top of Hover > More menu */
+, div[role="menuitem"][id="message-actions-add-reaction"]                       /* Emote hover-open sub-menu within Hover > More */
+, div[role="menu"] div[role="separator"].separator_c1e9c4                       /* leftover Hover > More sub-menu separator bar */
+
+, div[role="group"]:has(> div[id^="message-quickreact-"])                       /* message right-click quick-react */
+, div[role="group"]:has(#message-add-reaction)                                  /* right-click hover-open sub-menu */
+, div[role="separator"].separator_c1e9c4                                        /* leftover right-click separator bar */
+
+, #user-profile-editing-panel div[class*="scrollRegion"]						            /* per-server profile nitro-only edits */
+
+/* Settings menu upsells and clutter cleanup (except the "Billing" tab, which I believe to be non-offensive) */
+, [data-nav-anchor-key="appearance_custom_themes_upsell"]                       /* Disable apparence upsells in menu */
+, [data-nav-anchor-key="appearance_client_themes"]
+, [data-nav-anchor-key="appearance_in_app_icon_category"]
+/* this will have a double separator in the appearance menu... but deleting this would delete separators elsewhere too. So this stays. */
+, [data-nav-anchor-key="chat_favorites_toggle"]	                                /* Hide Favourites beta setting */
+, [data-nav-anchor-key="appearance_display_compact_avatars"]                    /* "Show user avatars" section does nothing in Appearance. Why is this even a thing? */
+, .sectionHeader__784a7:has(+ .theme-dark .card__784a7) + .theme-dark           /* Hide External Account Connection nitro upsell for Xbox subscription */
+, .sectionHeader__784a7
+/* TODO: Settings > Voice & Video > Video Background > "Custom" is another nitro upsell */
+, [data-nav-anchor-key="entrance_sounds_setting"]                               /* Hide Entrance Sounds feature */
+
+{ display: none !important; }   /* disable everything from above */
