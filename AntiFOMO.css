@@ -1,10 +1,14 @@
 /**
- * @name AntiFOMO
+ * @name AntiFOMO Autoupdate
  * @description Reduce clutter and upselling by disabling elements.
  * @author Salty
  * @version 1.0.1
  * @website https://github.com/altunidev/AntiFOMO-for-Discord
  * @source https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css
+ *
+ * AntiFOMO for Discord
+ * Source stylesheet. Bootstrap/import files should reference this file to receive updates automatically.
+ * Otherwise, use this file for local-hosted blocking, understanding no updates automatically apply.
 */
 
 ul[aria-label="Direct Messages"] > *:where( :has(a[href="/shop"]), :has(a[href="/store"]), :has(a[href*="/quest"]) ),   /* Hide Nitro, Shop, and Quests */
