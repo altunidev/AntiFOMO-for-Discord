@@ -11,7 +11,7 @@ As I find more annoyances, I intend to add blockers for these as and where they 
 ## Installation
 1. Install [Vencord](https://vencord.dev/) for your client
 2. Within Discord, navigate to Settings > Vencord Settings > Themes
-3. Download desired `.css` file (either the source file or the auto updating file work, based on your desired use-case)
+3. Download desired `.css` file (either the [source file](https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css) or the [auto updating file](https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO_Autoupdate.css) work, based on your desired use-case)
 4. Click "Open Themes Folder"
     - If you're on Discord on a web browser, click "Upload Theme" instead
 6. Navigate to where the `.css` file is, copy/move -> themes directory
