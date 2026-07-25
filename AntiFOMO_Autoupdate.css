@@ -5,7 +5,11 @@
  * @version 1.0.0
  * @website https://github.com/altunidev/AntiFOMO-for-Discord
  * @source https://github.com/altunidev/AntiFOMO-for-Discord/blob/main/AntiFOMO.css
+ *
+ * Auto-updating source file.
+ * This local stylesheet exists only to import the latest version from GitHub.
 */
+
 
 /* jsDelivr as a CDN, by suggestion of LLM. Looked into it a little, seems legit. */
 @import url("https://cdn.jsdelivr.net/gh/altunidev/AntiFOMO-for-Discord@main/AntiFOMO.css");
