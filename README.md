@@ -8,6 +8,25 @@ As I find more annoyances, I intend to add blockers for these as and where they 
 - Automatic updates
 - Easily parseable file for maintaining and updating
 
+## Preview
+<details>
+    <summary>Images</summary>
+    
+### Before
+<img width="326" height="272" alt="image" src="https://github.com/user-attachments/assets/6f9e8c99-f2da-4526-ba5c-8e64ab15b61c" />
+
+<img width="236" height="58" alt="image" src="https://github.com/user-attachments/assets/2cc4829d-d70a-4951-a3dc-9f543f894896" />
+
+<img width="1024" height="1165" alt="image" src="https://github.com/user-attachments/assets/61356bad-79ae-4b6a-8259-211603da58ab" />
+
+### After
+<img width="330" height="154" alt="image" src="https://github.com/user-attachments/assets/e78a8a47-5d7b-4386-ae6a-1b3354ead757" />
+
+<img width="157" height="62" alt="image" src="https://github.com/user-attachments/assets/0f76de65-9ce7-4e74-8f50-9a64bab4ca60" />
+
+<img width="1029" height="1174" alt="image" src="https://github.com/user-attachments/assets/b091961f-ef5b-45be-ac89-52c637a5dfaa" />
+</details>
+
 ## Installation
 1. Install [Vencord](https://vencord.dev/) for your client
 2. Within Discord, navigate to Settings > Vencord Settings > Themes
