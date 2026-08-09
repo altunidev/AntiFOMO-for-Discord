@@ -38,6 +38,10 @@ ul[aria-label="Direct Messages"] > *:where(      /* Hide Nitro, Shop, and Quests
 
 , #user-profile-editing-panel div[class*="scrollRegion"]                        /* per-server profile nitro-only edits */
 
+/* Hide Quest/FOMO treatment advertisements in "Active Now" tab */
+/* NOTE: this is not thoroughly tested, as I can only see the ads in "Active Now" when people are playing a game relevant to the ad, and when the ad feels like showing up */
+, div[class*="wrapper_"]:has( div[class*="treatmentHeader_"] img[src*="/quests/"] )
+
 /* Settings menu upsells and clutter cleanup (except the "Billing" tab, which I believe to be non-offensive) */
 , [data-nav-anchor-key="appearance_custom_themes_upsell"]                       /* Disable apparence upsells in menu */
 , [data-nav-anchor-key="appearance_client_themes"]
