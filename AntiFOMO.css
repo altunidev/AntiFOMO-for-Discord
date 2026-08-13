@@ -18,6 +18,9 @@ ul[aria-label="Direct Messages"] > *:where(      /* Hide Nitro, Shop, and Quests
 , li:has([aria-label*="Server Boost"])           /* Hide Server Boost */
 , div[aria-label="Send a gift"]                  /* Hide the "Gift" chatbox button */
 , div[aria-label="Apps"]                         /* Hide the "Apps" chatbox button. You can still access your wordle from the "+" menu on the left, stop panicking! */
+/* Hide promotional "Play MW4 with Nitro" annoyance popup on main screen */
+, div[role="dialog"]:has( img[src*="2d79c39b63ff64b05e6439fb94317c8686baac6b09b80e229bdc1fc29d0de45f"] )
+
 
 /* Hide Nitro Upsell attempts (in hopes to remove FOMO dark patterns) */
 
