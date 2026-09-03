@@ -58,6 +58,9 @@ ul[aria-label="Direct Messages"] > *:where(      /* Hide Nitro, Shop, and Quests
 
 /* Hide promotional "Play MW4 with Nitro" annoyance popup on main screen */
 , div[role="dialog"]:has( img[src*="2d79c39b63ff64b05e6439fb94317c8686baac6b09b80e229bdc1fc29d0de45f"] )
+/* Hide promotional "Gift Nitro and earn 5000 orbs" on main screen */
+, div[role="dialog"]:has( img[src*="66a7561a233ffc1a45c8b9a3503623681603ffc716045bb7aab2ff01daec2692"] )
+
 /* other one-offs that I'm selecting by hash for now, but should build into a more inclusive check... TODO: do this later */
 , .wrapper__11054
 
